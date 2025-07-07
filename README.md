@@ -1,47 +1,44 @@
-# weather-bot
+# Weather Bot
 
-Weather Bot là một bot đơn giản giúp bạn tra cứu thông tin thời tiết hiện tại và dự báo thời tiết cho các thành phố trên toàn thế giới. Bot sử dụng API từ OpenWeatherMap để lấy dữ liệu thời tiết và cung cấp thông tin bằng tiếng Việt.
+Weather Bot is a simple bot that helps you check current weather information and forecasts for cities worldwide. The bot uses the OpenWeatherMap API to fetch weather data and provides information in Vietnamese.
 
-## Tính năng
+## Features
 
-- **Xem thời tiết hiện tại**: Nhận thông tin thời tiết hiện tại cho một thành phố cụ thể.
-- **Xem dự báo thời tiết**: Nhận dự báo thời tiết trong 5 ngày tới cho một thành phố cụ thể.
-- **Đặt thành phố mặc định**: Đặt một thành phố mặc định để không cần nhập lại tên thành phố mỗi khi tra cứu thời tiết.
+- **Current weather**: Get current weather information for a specific city.
+- **Weather forecast**: Get a 5-day weather forecast for a specific city.
+- **Set default city**: Set a default city so you don't need to enter the city name each time you check the weather.
 
-## Cách sử dụng
+## Usage
 
-1. **Bắt đầu**: Gửi lệnh `/start` để bắt đầu sử dụng bot.
-2. **Xem thời tiết hiện tại**: Gửi lệnh `/weather <tên thành phố>` để xem thời tiết hiện tại. Nếu bạn đã đặt thành phố mặc định, chỉ cần gửi `/weather`.
-3. **Xem dự báo thời tiết**: Gửi lệnh `/forecast <tên thành phố>` để xem dự báo thời tiết trong 5 ngày tới. Nếu bạn đã đặt thành phố mặc định, chỉ cần gửi `/forecast`.
-4. **Đặt thành phố mặc định**: Gửi lệnh `/setcity <tên thành phố>` để đặt thành phố mặc định.
+1. **Start**: Send the `/start` command to begin using the bot.
+2. **Current weather**: Send `/weather <city name>` to view current weather. If you've set a default city, just send `/weather`.
+3. **Weather forecast**: Send `/forecast <city name>` to view the 5-day forecast. If you've set a default city, just send `/forecast`.
+4. **Set default city**: Send `/setcity <city name>` to set your default city.
 
-## Cài đặt
+## Installation
 
-1. **Yêu cầu**:
-   - Python 3.7 trở lên
-   - Các thư viện cần thiết: `aiohttp`, `python-telegram-bot`
+1. **Requirements**:
+   - Python 3.7 or higher
+   - Required libraries: `aiohttp`, `python-telegram-bot`
 
-2. **Cài đặt các thư viện**:
+2. **Install dependencies**:
    ```bash
    pip install aiohttp python-telegram-bot
    ```
 
-3. **Cấu hình**:
-   - Tạo một file `.env` và thêm các biến môi trường sau:
+3. **Configuration**:
+   - Create a `.env` file with these environment variables:
      ```plaintext
      API_KEY=<YOUR_OPENWEATHERMAP_API_KEY>
      BOT_TOKEN=<YOUR_TELEGRAM_BOT_TOKEN>
      ```
-   - Thay thế `<YOUR_OPENWEATHERMAP_API_KEY>` và `<YOUR_TELEGRAM_BOT_TOKEN>` bằng API key của bạn từ OpenWeatherMap và token của bot Telegram.
+   - Replace `<YOUR_OPENWEATHERMAP_API_KEY>` and `<YOUR_TELEGRAM_BOT_TOKEN>` with your actual OpenWeatherMap API key and Telegram bot token.
 
-4. **Chạy bot**:
+4. **Run the bot**:
    ```bash
    python bott.py
    ```
 
-## Đóng góp
+## Contribution
 
-Nếu bạn muốn đóng góp vào dự án, vui lòng tạo một pull request. Mọi đóng góp đều được hoan nghênh!
-
-
-
+If you want to contribute to the project, please create a pull request. All contributions are welcome!
