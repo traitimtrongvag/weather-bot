@@ -36,7 +36,7 @@ Weather Bot is a simple bot that helps you check current weather information and
 
 4. **Run the bot**:
    ```bash
-   python bott.py
+   python Main.py
    ```
 
 ## Contribution
