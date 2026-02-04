@@ -5,9 +5,12 @@ import time
 import threading
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
+from dotenv import load_dotenv
 
-API_KEY = "YOUR API KEY"
-BOT_TOKEN = "YOUR TOKEN TELEGRAM"
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 if not API_KEY or not BOT_TOKEN:
     raise ValueError("Thiếu API Key hoặc Bot Token!")
